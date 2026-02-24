@@ -160,9 +160,9 @@ def parse_dirs_and_sort(
                         natural_keys(text, retoken=r"[0-9a-zA-Z]*_(\d+)[a-zA-Z_]*[\.].*", n=1),
                     ),
                 )
-            except:
+            except Exception:
                 input_dirs_list = sorted(input_dirs_list, key=lambda text: (natural_keys(text)))
-        except:
+        except Exception:
             input_dirs_list = sorted(input_dirs_list, key=lambda text: text)
 
     return input_dirs_list

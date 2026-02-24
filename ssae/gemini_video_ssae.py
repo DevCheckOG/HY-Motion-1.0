@@ -131,7 +131,7 @@ class GeminiVideoAnalyzer:
                         line = line.strip()
                         if line:
                             file_items.append(json.loads(line))
-                except:
+                except Exception:
                     # JSON format: the entire file is a JSON array
                     f.seek(0)
                     data = json.load(f)
@@ -235,7 +235,7 @@ class GeminiVideoAnalyzer:
                 for line in f:
                     try:
                         processed_idxs.add(json.loads(line).get("idx"))
-                    except:
+                    except Exception:
                         continue
         # check if the idx has been processed
         items_to_run = [it for it in tqdm(all_items) if it.get("idx") not in processed_idxs]
