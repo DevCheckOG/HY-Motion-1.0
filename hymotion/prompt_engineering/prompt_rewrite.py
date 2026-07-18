@@ -312,7 +312,7 @@ class PromptRewriter:
                 json_str = re.search(r"\{.*\}", response, re.DOTALL).group()
                 result = json.loads(json_str)
                 return round(float(result["duration"]) / 30.0, 2), result["short_caption"]
-            except:
+            except Exception:
                 return 5.0, text
 
 
