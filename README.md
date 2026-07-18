@@ -6,9 +6,6 @@
 </p>
 
 <div align="center">
-  <a href="https://aistudio.tencent.com/motion" target="_blank">
-    <img src="https://img.shields.io/badge/Official%20Site-333399.svg?logo=homepage" height="22px" alt="Official Site">
-  </a>
   <a href="https://github.com/Tencent-Hunyuan/HY-Motion-1.0" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-Repo-181717?logo=github&logoColor=white" height="22px" alt="Github Repo">
   </a>
